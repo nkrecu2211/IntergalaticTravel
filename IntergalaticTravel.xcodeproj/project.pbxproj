@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D7C89EF218CAF8C00031C79 /* StarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7C89EE218CAF8C00031C79 /* StarViewController.swift */; };
 		9DB22843218B5FD8000C1025 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB22842218B5FD8000C1025 /* AppDelegate.swift */; };
 		9DB22845218B5FD8000C1025 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB22844218B5FD8000C1025 /* ViewController.swift */; };
 		9DB22848218B5FD8000C1025 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DB22846218B5FD8000C1025 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D7C89EE218CAF8C00031C79 /* StarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarViewController.swift; sourceTree = "<group>"; };
 		9DB2283F218B5FD8000C1025 /* IntergalaticTravel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntergalaticTravel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB22842218B5FD8000C1025 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DB22844218B5FD8000C1025 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				9DB22842218B5FD8000C1025 /* AppDelegate.swift */,
 				9DB22844218B5FD8000C1025 /* ViewController.swift */,
+				9D7C89EE218CAF8C00031C79 /* StarViewController.swift */,
 				9DB22846218B5FD8000C1025 /* Main.storyboard */,
 				9DB22849218B5FDB000C1025 /* Assets.xcassets */,
 				9DB2284B218B5FDB000C1025 /* LaunchScreen.storyboard */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DB22845218B5FD8000C1025 /* ViewController.swift in Sources */,
+				9D7C89EF218CAF8C00031C79 /* StarViewController.swift in Sources */,
 				9DB22843218B5FD8000C1025 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

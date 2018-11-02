@@ -16,14 +16,69 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Starry_sky_1" translatesAutoresizingMaskIntoConstraints="NO" id="2Gs-y1-jBh">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IT6-NS-1RY">
+                                <rect key="frame" x="112" y="383" width="150" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Blue Dwarf"/>
+                                <connections>
+                                    <segue destination="tPR-F1-YnL" kind="show" id="uke-0P-C9K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dB9-uq-oLl">
+                                <rect key="frame" x="112" y="232" width="150" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Red Dwarf ">
+                                    <color key="titleColor" red="0.66666668650000005" green="0.0" blue="0.1317000502" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="tPR-F1-YnL" kind="show" id="4y5-OB-ykd"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Gs-y1-jBh" secondAttribute="bottom" id="0V2-7M-qU7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Gs-y1-jBh" secondAttribute="trailing" id="9W5-YM-gfg"/>
+                            <constraint firstItem="2Gs-y1-jBh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IIf-3z-S2t"/>
+                            <constraint firstItem="2Gs-y1-jBh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bcz-VM-ruY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Inter Galatic Travel Inc." id="KcY-7R-kwb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1064.8" y="118.29085457271366"/>
+            <point key="canvasLocation" x="982" y="90"/>
+        </scene>
+        <!--Star View Controller-->
+        <scene sceneID="BRF-UD-DgT">
+            <objects>
+                <viewController id="tPR-F1-YnL" customClass="StarViewController" customModule="IntergalaticTravel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8i3-SG-tZT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Li-7c-CG3">
+                                <rect key="frame" x="67" y="228" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HGP-wK-eOu"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="6Li-7c-CG3" id="QLd-Aa-0eC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8z-18-9sn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1735" y="90"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7Ql-HE-Ssg">
@@ -41,7 +96,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nW9-if-bbL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="125.59999999999999" y="118.29085457271366"/>
+            <point key="canvasLocation" x="164" y="90"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Starry_sky_1" width="1024" height="576"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="uke-0P-C9K"/>
+    </inferredMetricsTieBreakers>
 </document>
